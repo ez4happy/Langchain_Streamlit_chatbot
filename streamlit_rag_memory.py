@@ -11,7 +11,7 @@ from langchain_core.output_parsers import StrOutputParser
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-from langchain_chorma import Chroma
+from langchain_chroma import Chroma
 
 #오픈AI API 키 설정
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
